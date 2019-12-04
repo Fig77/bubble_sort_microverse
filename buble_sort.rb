@@ -1,3 +1,4 @@
+# assignment 1.0
 def bubble_sort(arr)
 	order = false
 	until order do
@@ -10,3 +11,27 @@ def bubble_sort(arr)
 		end
 	end
 end
+
+# assignment 1.2
+def bubble_sort_by(array)
+	swap= false
+	while !swap
+		swap=true
+		i=0
+		loop do
+			if yield(array[i],array[i+1]) > 0
+				array[i], array[i+1] = array[i+1], array[i]
+				swap=false
+			end
+			i += 1
+			if i == (array.length-1)
+				break
+			end	
+		end
+	end
+end
+
+bubble_sort_by(["hi","hello","hey"]) do |left,right|
+	left.length - right.length
+end
+
