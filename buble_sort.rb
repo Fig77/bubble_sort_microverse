@@ -1,5 +1,3 @@
-# assignment 1.0
-
 def bubble_sort(arr)
 	order = false
 	until order do
@@ -12,8 +10,6 @@ def bubble_sort(arr)
 		end
 	end
 end
-
-# assignment 1.2
 
 def bubble_sort_by(array)
 	swap= false
