@@ -14,8 +14,8 @@ end
 def bubble_sort_by(array)
 	swap= false
 	while !swap
-		swap=true
-		i=0
+		swap = true
+		i = 0
 		loop do
 			if yield(array[i],array[i+1]) > 0
 				array[i], array[i+1] = array[i+1], array[i]
