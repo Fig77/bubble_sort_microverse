@@ -1,6 +1,6 @@
 def bubble_sort(arr)
-	order = false
-	until order do
+		order = false
+  until order do
 		order = true
 		for k in 0...arr.length-1
 			if arr[k] > arr[k+1]
