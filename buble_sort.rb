@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 def bubble_sort(arr)
   order = false
-  until order do
+  until order
     order = true
-    for k in 0...arr.length-1
-      if arr[k] > arr[k+1]
-        arr[k], arr[k+1] = arr[k+1], arr[k]
+    (0...arr.length - 1).each do |k|
+      if arr[k] > arr[k + 1]
+        arr[k], arr[k + 1] = arr[k + 1], arr[k]
         order = false
       end
     end
@@ -13,22 +15,21 @@ end
 
 def bubble_sort_by(array)
   swap= false
-  while !swap
-    swap=true
-    i=0
+  until swap
+    swap = true
+    i = 0
     loop do
-      if yield(array[i],array[i+1]) > 0
-        array[i], array[i+1] = array[i+1], array[i]
+      if yield(array[i], array[i + 1]).positive?
+        array[i], array[i + 1] = array[i + 1], array[i]
         swap=false
       end
       i += 1
-      if i == (array.length-1)
-        break
+        break if i == (array.length - 1)
       end 
     end
   end
 end
 
-bubble_sort_by(["hi","hello","hey"]) do |left,right|
+bubble_sort_by(%w[hi hello hey]) do |left,right|
   left.length - right.length
 end
