@@ -14,20 +14,20 @@ def bubble_sort(arr)
 end
 
 def bubble_sort_by(array)
-  swap= false
+  swap = false
   until swap
     swap = true
     i = 0
     loop do
       if yield(array[i], array[i + 1]).positive?
         array[i], array[i + 1] = array[i + 1], array[i]
-        swap=false
+        swap = false
       end
       i += 1
       break if i == (array.length - 1)
-      end 
-    end
+    end 
   end
-bubble_sort_by(%w[hi hello hey]) do |left,right|
+end
+bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
