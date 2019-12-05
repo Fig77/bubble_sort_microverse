@@ -24,12 +24,11 @@ def bubble_sort_by(array)
         swap=false
       end
       i += 1
-        break if i == (array.length - 1)
+      break if i == (array.length - 1)
       end 
     end
   end
-end
-
+  
 bubble_sort_by(%w[hi hello hey]) do |left,right|
   left.length - right.length
 end
