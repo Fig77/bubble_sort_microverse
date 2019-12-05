@@ -10,8 +10,8 @@ def bubble_sort(arr)
         order = false
       end
     end
+    return arr
   end
-  return arr
 end
 
 def bubble_sort_by(array)
@@ -27,6 +27,6 @@ def bubble_sort_by(array)
       i += 1
       break if i == (array.length - 1)
     end
+    return array
   end
-  return array
 end
