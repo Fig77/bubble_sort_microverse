@@ -23,8 +23,8 @@ def bubble_sort_by(array)
         array[i], array[i + 1] = array[i + 1], array[i]
         swap=false
       end
-        i += 1
-        break if i == (array.length - 1)
+      i += 1
+      break if i == (array.length - 1)
       end 
     end
   end
