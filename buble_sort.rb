@@ -11,6 +11,7 @@ def bubble_sort(arr)
       end
     end
   end
+  return arr
 end
 
 def bubble_sort_by(array)
@@ -27,7 +28,5 @@ def bubble_sort_by(array)
       break if i == (array.length - 1)
     end
   end
-end
-bubble_sort_by(%w[hi hello hey]) do |left, right|
-  left.length - right.length
+  return array
 end
