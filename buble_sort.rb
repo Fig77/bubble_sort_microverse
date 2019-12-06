@@ -11,7 +11,7 @@ def bubble_sort(arr)
       end
     end
   end
-  return arr
+  arr
 end
 
 def bubble_sort_by(array)
@@ -28,9 +28,5 @@ def bubble_sort_by(array)
       break if i == (array.length - 1)
     end
   end
-  return array
+  array
 end
-
-
-print bubble_sort([4,3,78,2,0,2])
-gets.chomp
