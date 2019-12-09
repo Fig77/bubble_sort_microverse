@@ -25,14 +25,14 @@ In this project, the you will implement the bubble sort algorithm. Assignment is
 Add the following at the end of its respective function
 
 ```
-bubble_sort([4,3,78,2,0,2])
+print bubble_sort([4,3,78,2,0,2])
 
 ```
 
 ```
-bubble_sort_by(%w[hi hello hey]) do |left, right|
-  left.length - right.length
-end
+print (bubble_sort_by(%w[hi hello hey]) do |left, right|
+         left.length - right.length
+      end )
 ```
 
 ## License
