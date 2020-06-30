@@ -1,6 +1,6 @@
 # ADVANCED BUILDING BLOCKS: Bubble Sort
 
-In this project, the you will implement the bubble sort algorithm. Assignment is focused on the use of yield and passing a block to a method.
+The objective of this project is to implement a bubble-sort function in Ruby.
 
 ## Project Description
 
