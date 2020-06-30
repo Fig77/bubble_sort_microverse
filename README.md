@@ -10,6 +10,7 @@ The objective of this project is to implement a bubble-sort function in Ruby.
 
 1. Clone the project- git clone <https://github.com/Fig77/bubble_sort_microverse.git>
 2. Cd bubble_sort_microverse
+3. You need to have Ruby installed. You can se a complete guide of how to install it [here](https://www.ruby-lang.org/en/documentation/installation/)
 
 ## Run the server
 
